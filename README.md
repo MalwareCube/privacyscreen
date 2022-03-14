@@ -4,4 +4,4 @@ PrivacyScreen is a lightweight browser extension used as a digital filter to hid
 
 ## Install PrivacyScreen
 
-- FireFox: [https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/](https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/)
+- **Mozilla FireFox:** [https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/](https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/)
