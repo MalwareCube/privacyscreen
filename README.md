@@ -1,4 +1,4 @@
-![PrivacyScreen Logo](https://raw.githubusercontent.com/odacavo/privacyscreen/main/src/icons/icon128.png)
+![PrivacyScreen Logo](https://raw.githubusercontent.com/odacavo/privacyscreen/main/src/icons/icon48.png)
 
 # PrivacyScreen
 
