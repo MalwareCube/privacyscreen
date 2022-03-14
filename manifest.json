@@ -1,0 +1,41 @@
+{
+
+    "manifest_version": 2,
+    "name": "Privacy Screen",
+    "version": "1.0.0",
+    "description": "Browse the web and prevent shoulder surfing by automatically blurring sensitive webpage data.",
+    "author": "@odacavo",
+  
+    "icons": {
+        "16": "/src/icons/icon16.png",
+        "48": "/src/icons/icon48.png",
+        "128": "/src/icons/icon128.png"
+      },
+
+    "browser_action": {
+        "default_icon": "/src/icons/icon19.png",
+        "default_title": "PrivacyScreen",
+        "default_popup": "/src/popup.html",
+        "browser_style": false
+    },
+
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["/src/privacyscreen.js"],
+        "css": ["/src/privacyscreen.css"]
+      }
+    ],
+
+    "background": {
+      "scripts": ["/src/background.js"],
+      "persistent": false
+    }
+  
+  }
+  

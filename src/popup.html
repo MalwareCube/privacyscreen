@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<style type="text/css">
+	
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		border-top: solid 2px #2196F3;
+		line-height: 1.3em;
+		margin: 0 auto;
+		padding: 0;
+
+		font-family: 'Arial', sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		max-width: 360px;
+		min-width:360px;
+		font-size: 16px;
+		color: #333;
+
+		user-select: none;
+	}
+
+	a {
+		color: #4A9BD5;
+		transition: color .2s;
+	}
+
+	a:hover {
+		color: #1E76B4;
+	}
+	
+	.actionBold {
+		font-weight: 700;
+	}
+
+	.actionEnabled {
+		color: #4a9c33;
+		font-weight: 700;
+	}
+
+	.actionDisabled {
+		color: #cf2d2d;
+		font-weight: 700;
+	}
+
+	#actionNav {
+		padding-top: 15px;
+		font-family: 'Arial', sans-serif;
+
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-around;
+		
+		border-bottom: solid 2px #eee;
+		padding-bottom: 10px;
+	}
+
+	#actionNav > div {
+		text-align: center;
+	}
+
+	#actionNavLogo {
+		width: 39px;
+	}
+
+	#actionNavTitle {
+		font-size: 1.5em;
+		color: #333;
+		text-align: center;
+	}
+
+	.hltext {
+		font-weight: 200;
+	}
+
+	#actionNavClose {
+		width: 39px;
+		padding: 11px;
+		opacity: .7;
+		transition: all .3s;
+	}
+
+	#actionNavClose:hover {
+		cursor: pointer;
+		opacity: 1;
+		transform: rotate(90deg);
+	}
+
+	#actionDomain {
+		padding: 10px;
+		margin-top: 20px;
+		text-align: center;
+		border-bottom: solid 2px #eee;
+		padding-bottom: 10px;
+	}
+
+	#actionDomain h2 {
+		font-size: 1.2em;
+	}
+
+
+
+/*Toggle Switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #478FCC;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #478FCC;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+
+
+
+
+
+
+#actionOptions {
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#actionOptions h2 {
+	font-size: 1.2em;
+}
+
+#actionOptions h3 {
+	font-size: 1em;
+}
+
+
+
+
+#actionOptionsList {
+display: flex;
+flex-wrap: no-wrap;
+align-items: center;
+justify-content: space-between;
+}
+
+#actionOptionsList svg {
+  width: 100%;
+}
+
+#actionOptionsList div {
+	flex-grow: 1;
+	padding: 5px;
+}
+
+
+.actionOptionsOption {
+	transition: all .2s;
+}
+
+.actionOptionsOption:hover {
+	cursor: pointer;
+	opacity: .9;
+}
+
+.actionOptionsOptionSelected {
+	filter: grayscale(100%);
+	opacity: .7;
+	transition: all .2s;
+}
+
+
+
+
+
+#saveButton {
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 10px;
+
+	border: none;
+	border-radius: 2px;
+	background-color: #478FCC;
+	color: white;
+
+	transition: all .2s;
+	cursor: pointer;
+}
+
+#saveButton:hover {
+	opacity: .9;
+}
+
+.checkmark {
+	
+	margin-left: 10px;
+	user-select: none;
+	color: #478FCC;;
+	
+	font-size: 14px;
+	opacity: 0;
+	
+	transition: all .5s;
+	visibility: hidden;
+}
+
+.checkmarkShow {
+	display: inline !important;
+	opacity: 1;
+	visibility: visible;
+}
+
+	
+
+
+
+#actionFooter {
+	margin-top: 10px;
+	text-align: center;
+	padding-top: 5px;
+	box-shadow: inset 0px 8px 8px -10px #CCC;
+	border-bottom: solid 4px #2196F3;
+}
+
+#actionFooter p {
+	font-size: 1em;
+}
+
+
+
+.versionNumber {
+	font-size: 14px !important;
+}
+
+</style>
+
+<title>PrivacyScreen Settings</title>
+</head>
+
+<!--Header-->
+<header id="actionNav">
+		<div><img id="actionNavLogo" src="icons/icon48.png" title="PrivacyScreen Logo" alt="PrivacyScreen Logo"></div>
+		<div><h1 id="actionNavTitle">Privacy<span class="hltext">Screen</span></h1></div>
+		<div><img id="actionNavClose" src="icons/close_icon.svg" title="Close Options" alt="Close options panel icon"></div>  
+</header>
+
+
+<!--Toggle Switch-->
+<div id="actionDomain">
+	<label title="Turn PrivacyScreen on or off for the current domain" class="switch">
+		<input id="actionDomainToggle" type="checkbox" checked>
+		<span class="slider"></span>
+	</label>
+
+	<h2 id="actionDomainCom">Domain</h2>
+	<p id="domainStatusIndicator">PrivacyScreen is <span id="actionEnabledID" class="actionEnabled">enabled</span> for <span id="domainDesc" class="actionBold">url</span></p>
+</div>
+
+
+<!--Options-->
+<div id="actionOptions">
+	<h2>Options</h2>
+
+	<!--4 Panel Options List-->
+	<div id="actionOptionsList">
+
+		<!--Mouseover/Hover Blur Setting-->
+		<div data-option="hoverBlur" class="actionOptionsOption"><img src="icons/hover_icon.svg" title="Unblur Elements on Mouseover (Toggle)" alt="Unblur Elements on Mouseover (Toggle)"></div>
+
+		<!--Unfocused Tab Blue Setting-->
+		<div data-option="tabBlur" class="actionOptionsOption"><img src="icons/tabs_icon.svg" title="Blur Unfocused Browser Tabs/Windows (Toggle)" alt="Blur Unfocused Browser Tabs/Windows (Toggle)"></div>
+
+		<!--Active Fields Blur Setting-->
+		<div data-option="activeBlur" class="actionOptionsOption"><img src="icons/active_icon.svg" title="Blur the Current/Active Field (Toggle)" alt="Blur the Current/Active Field (Toggle)"></div>
+
+		<!--Hotkey Blur-->
+		<div data-option="hotkeyBlur" class="actionOptionsOption"><img src="icons/hotkey_icon.svg" title="Toggle Alt + L HotKey For Controlling Tab/Window Blur (Toggle)" alt="Toggle Alt + L HotKey For Controlling Tab/Window Blur"></div>
+	</div>
+
+</div>
+
+
+<div id="actionFooter">
+	<p class="versionNumber">Version 1.0.0</p>
+	<p><a href="https://github.com/odacavo/privacyscreen" target="_blank" rel="noreferrer" title="PrivacyScreen GitHub Repo">Source</a></p>	
+</div>
+
+<script src="popup.js"></script>
+

@@ -1,0 +1,14 @@
+.xzlarrDocumentBlur {
+    filter: blur(4px) !important;
+    -webkit-filter: blur(4px) !important;
+}
+
+.xzlarrPrivacyScreenBlur {
+    color: transparent !important;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5) !important;
+}
+
+.xzlarrPrivacyScreenBlur::placeholder {
+    color: transparent !important;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5) !important;
+}
