@@ -7,7 +7,9 @@ Whether you're entering sensitive data beside a stranger on an airplane or strea
 
 ## Screenshots
 ![PrivacyScreen Popup Example](https://i.imgur.com/Of9j0Gh.png)
-|:--:|| <b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b>|
+|:--:|
+
+| <b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b> |
 ![PrivacyScreen Blurred Webpage Example](https://i.imgur.com/lITb9Ks.jpg)
 
 ## Installation
