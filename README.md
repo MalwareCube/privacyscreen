@@ -11,6 +11,9 @@ Whether you're entering sensitive data beside a stranger on an airplane or strea
 
 | <b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b> |
 ![PrivacyScreen Blurred Webpage Example](https://i.imgur.com/lITb9Ks.jpg)
+|:--:|
+
+| <b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b> |
 
 ## Installation
 This extension can be installed in the browser from its official listings.
