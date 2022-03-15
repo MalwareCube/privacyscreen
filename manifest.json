@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "Privacy Screen",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Browse the web and prevent shoulder surfing by automatically blurring sensitive webpage data.",
     "author": "@odacavo",
   

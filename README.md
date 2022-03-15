@@ -8,4 +8,4 @@ Whether you're entering sensitive data beside a stranger on an airplane or strea
 
 ## Install PrivacyScreen
 
-- **Mozilla FireFox:** [https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/](https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/)
+- **Mozilla Firefox:** [https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/](https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/)
