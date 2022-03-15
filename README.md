@@ -17,7 +17,7 @@ This extension can be installed in the browser from its official listings.
 
 
 ## Contributing
-Pull requests are absolutely welcome if you see a way to make this extension more efficient and lightweight. For major changes or feature additions, please open an issue first to discuss what you would like to change. I'd love to collaborate!
+Pull requests are welcome if you see a way to make this extension more efficient and lightweight. For major changes or feature additions, please open an issue first to discuss what you would like to change.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
