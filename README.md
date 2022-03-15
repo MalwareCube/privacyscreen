@@ -11,7 +11,6 @@ Whether you're entering sensitive data beside a stranger on an airplane or strea
 <p align = "center">Left: PrivacyScreen Popup Options | Right: Example of blurred input fields</p>
 
 ## Installation
-This extension can be installed in the browser from its official listings.
 
 - **Mozilla Firefox:** [https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/](https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/)
 - Ports for Chrome, Opera, and Edge are currently in development as they do not use the proposed standard API namespace used by Firefox and Safari
