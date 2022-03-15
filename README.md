@@ -11,3 +11,4 @@ Whether you're entering sensitive data beside a stranger on an airplane or strea
 
 ## Install PrivacyScreen
 - **Mozilla Firefox:** [https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/](https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/)
+- Ports for Chrome, Opera, and Edge are currently in development as they do not use the proposed standard API namespace used by Firefox and Safari
