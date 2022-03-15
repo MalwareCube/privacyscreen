@@ -7,7 +7,7 @@ Whether you're entering sensitive data beside a stranger on an airplane or strea
 
 ## Screenshots
 ![PrivacyScreen Popup Example](https://i.imgur.com/Of9j0Gh.png)
-![PrivacyScreen Blurred Webpage Example](https://i.imgur.com/YXoFuQg.jpg)
+![PrivacyScreen Blurred Webpage Example](https://i.imgur.com/lITb9Ks.jpg)
 
 ## Install PrivacyScreen
 - **Mozilla Firefox:** [https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/](https://addons.mozilla.org/en-CA/firefox/addon/privacyscreen/)
