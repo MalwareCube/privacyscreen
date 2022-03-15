@@ -8,7 +8,7 @@ Whether you're entering sensitive data beside a stranger on an airplane or strea
 ## Screenshots
 ![PrivacyScreen Popup Example](https://i.imgur.com/Of9j0Gh.png)
 ![PrivacyScreen Blurred Webpage Example](https://i.imgur.com/lITb9Ks.jpg)
-<p align = "center">**Left:** PrivacyScreen Popup Options | **Right:** Example of blurred input fields</p>
+<p align = "center">Left: PrivacyScreen Popup Options | Right: Example of blurred input fields</p>
 
 ## Installation
 This extension can be installed in the browser from its official listings.
