@@ -45,6 +45,9 @@ disabledDomains.then((result) => {
 //If the current domain is NOT disabled, perform the following
 if(xzlarrDomain && !domainIsDisabled) {
 
+    //Send message to background.js to update icon
+    browser.runtime.sendMessage({from:"enabled",message:"enabled"});
+
     //[MAIN] - Blur all allElements//////////////////////////////
     for (let i=0; i < allElements.length; i++) {
         allElements[i].classList.add("xzlarrPrivacyScreenBlur");

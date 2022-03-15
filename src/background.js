@@ -7,6 +7,16 @@ browser.storage.onChanged.addListener(() => {
 //Receive message, update icon
 browser.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     if (message.from == "disabled") {
-        browser.browserAction.setIcon({path: "/src/icons/icon19-grey.png"});
+    //Icon Update for specific tab
+     browser.tabs.query({active: true, currentWindow: true}, ([tab]) => {
+        browser.browserAction.setIcon({tabId: tab.id, path: "/src/icons/icon19-grey.png"});
+      });
     }
+
+    if (message.from == "enabled") {
+      //Icon Update for specific tab
+       browser.tabs.query({active: true, currentWindow: true}, ([tab]) => {
+          browser.browserAction.setIcon({tabId: tab.id, path: "/src/icons/icon19.png"});
+        });
+      }
 });
